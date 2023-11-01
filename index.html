@@ -48,3 +48,204 @@
 </body>
 </html>
 
+
+<style>
+
+  body {font-family: "Lato", sans-serif;
+       }
+  
+  ul.tab {
+    list-style-type: none;
+    margin: ;
+    padding: 0px;
+    overflow: hidden;
+    border: 0px solid #ccc;
+    background-color: #f1f1f1;
+  }
+
+  /* Float the list items side by side */
+  ul.tab li {float: left;
+	    }
+  
+  /* Style the links inside the list items */
+  ul.tab li a {
+      display: inline-block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 17px;
+  }
+
+  /* Change background color of links on hover */
+  ul.tab li a:hover {
+      background-color: #ddd;
+  }
+
+  /* Create an active/current tablink class */
+  ul.tab li a:focus, .active {
+      background-color: #ccc;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 0px solid #ccc;
+      border-top: none;
+  }
+
+  .collapsible {
+      background-color: white;
+      color: rgb(105, 105, 105);
+      cursor: pointer;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+      background-color: #f1f1f1;
+  }
+
+  .collapsible:after {
+      content: '\002B';
+      color: rgb(105, 105, 105);
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+  }
+
+  .collapsible.active:after {
+      content: "\2212";
+  }
+
+  .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: white;
+  }
+</style>
+</head>
+
+<body style="padding: 0pt; margin-top: 60px; margin-left: 200px; margin-right: 200px; font-family: arial,helvetica,sans-serif; color: rgb(105, 105, 105);">
+
+    
+<!-- Script for default tab: -->
+    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen"></a>
+
+<!-- TAB NAMES: -->
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Home')">Home</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Working')"> Work in Progress</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Climate')"> Data on Climate and Crop Yields</a></li>
+</ul>
+
+<!-- TAB CONTENT: -->
+  
+<!-- Research -->
+<div id="research" class="tabcontent">
+<object type="text/html" data="research.html" width="100%" height="600px" style="overflow:auto;border:0px ridge white">
+</object>
+</div>
+<!-- Research-->
+
+<!-- Home -->
+<div id="Home" class="tabcontent">
+  <style>
+    img {
+	float: left;
+	border: 0px dotted black;
+	margin: 15px 25px 0px 0px;
+    }
+  </style>
+
+<img src="manoj.jpg" alt ="Photo" height="220" width=" 150">
+
+<p style="text-align: left; font-size: 20px;"><strong>Manoj Sharma</strong></p>
+
+<p style="text-align: left;">
+	PhD Stucent <br>
+	Department of Agricultural Economics<br>
+	Kansas State University<br>
+ </p>
+
+<p> Hello, and welcome to my website! I am a Ph.D. student at Kansas State University in the Department of Agricultural Economics under the supervision of Dr. N.B. Villoria. </p> 
+
+<p>My research interest lies at the intersection of production economics, international trade, and environmental issues.</p>
+
+<p> The trade-off between food production and environmental protection is a multidimensional concern, involving the research community of many disciplinary cores. At the heart of this concern are climate change and international trade agendas, which continue to be significant drivers shaping the future of food-environment connection. This necessitates active collaboration among scientists and researchers from various disciplines, including agriculture science, economics, earth science, environmental science, data science, and more. In line with this, I intend to advance my research interests. <p>
+
+</p>
+
+<p style="color:
+    rgb(0,0,0);"><a href=https://drive.google.com/file/d/1BVdWFifJ9FgiOaDJ2DLGBdUu1bZWx9o6/view"
+    target="_blank">Curriculum Vitae</a>
+    | <a href="https://scholar.google.com/citations?user=iFXW3w4AAAAJ&hl=en" target="_blank">Google Scholar
+  </p>
+
+<script>
+function openCity(evt, cityName) { var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent"); for (i
+    = 0; i < tabcontent.length; i++) { tabcontent[i].style.display =
+    "none"; } tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) { tablinks[i].className =
+    tablinks[i].className.replace(" active", ""); }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active"; }
+		    </script>
+
+<script>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<!-- Default Statcounter code for nelson's website
+https://nvilloria.github.io/ -->
+<script type="text/javascript">
+var sc_project=4356370; 
+var sc_invisible=1; 
+var sc_security="ab71143c"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - StatCounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/4356370/0/ab71143c/1/"
+alt="Web Analytics Made Easy - StatCounter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+<!-- End of StatCounter Code for Default Guide -->
+
+
+<!-- Collapsible script -->
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<!-- End of collapsible script -->
+
+
+  </body>
+</html>
+
